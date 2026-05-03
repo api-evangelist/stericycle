@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/stericycle/blob/main/json-schema/stericycle-waste-pickup-schema.json",
+  "title": "Stericycle Waste Pickup",
+  "description": "Schema for a Stericycle regulated medical waste pickup service record",
+  "type": "object",
+  "required": ["id", "accountId", "serviceDate", "wasteType", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the pickup service record"
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Stericycle customer account identifier"
+    },
+    "locationId": {
+      "type": "string",
+      "description": "Identifier for the service location within the account"
+    },
+    "serviceDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Scheduled date for the waste pickup service"
+    },
+    "wasteType": {
+      "type": "string",
+      "enum": [
+        "regulated-medical-waste",
+        "sharps",
+        "pharmaceutical-waste",
+        "hazardous-waste",
+        "chemotherapy-waste",
+        "pathological-waste"
+      ],
+      "description": "Category of regulated waste being collected"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["scheduled", "completed", "cancelled", "missed"],
+      "description": "Current status of the pickup service"
+    },
+    "containerCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of waste containers collected"
+    },
+    "weight": {
+      "type": "number",
+      "description": "Total weight of waste collected in pounds"
+    },
+    "manifestNumber": {
+      "type": "string",
+      "description": "Regulatory manifest number for waste tracking compliance"
+    },
+    "treatmentFacility": {
+      "type": "string",
+      "description": "Name of the treatment and disposal facility"
+    },
+    "complianceDocumentUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the compliance certificate or manifest document"
+    },
+    "driverName": {
+      "type": "string",
+      "description": "Name of the Stericycle driver who performed the pickup"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when the record was created"
+    }
+  },
+  "additionalProperties": false
+}

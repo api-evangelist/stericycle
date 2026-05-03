@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/stericycle/blob/main/json-schema/stericycle-compliance-training-schema.json",
+  "title": "Stericycle Compliance Training Record",
+  "description": "Schema for a Stericycle compliance training completion record for HIPAA, OSHA, and bloodborne pathogen training",
+  "type": "object",
+  "required": ["id", "employeeId", "courseId", "courseName", "completionDate", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique training record identifier"
+    },
+    "employeeId": {
+      "type": "string",
+      "description": "Employee identifier within the customer account"
+    },
+    "employeeName": {
+      "type": "string",
+      "description": "Full name of the employee who completed the training"
+    },
+    "courseId": {
+      "type": "string",
+      "description": "Stericycle course identifier"
+    },
+    "courseName": {
+      "type": "string",
+      "description": "Name of the compliance training course"
+    },
+    "courseType": {
+      "type": "string",
+      "enum": ["hipaa", "osha", "bloodborne-pathogen", "hazcom", "dea-compliance", "dot-training"],
+      "description": "Regulatory compliance category"
+    },
+    "completionDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the training was completed"
+    },
+    "expirationDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date by which retraining is required"
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Assessment score as a percentage"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["completed", "in-progress", "expired", "not-started"],
+      "description": "Training completion status"
+    },
+    "certificateUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to download the completion certificate"
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Customer account identifier"
+    },
+    "locationId": {
+      "type": "string",
+      "description": "Location within the customer account"
+    }
+  },
+  "additionalProperties": false
+}

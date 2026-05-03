@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "srcl": "https://www.stericycle.com/vocab/",
+    "schema": "https://schema.org/",
+    "env": "https://schema.org/environmentalImpact",
+    "WastePickup": {
+      "@id": "srcl:WastePickup",
+      "@type": "@id"
+    },
+    "ComplianceTraining": {
+      "@id": "srcl:ComplianceTraining",
+      "@type": "@id"
+    },
+    "ServiceAccount": {
+      "@id": "srcl:ServiceAccount",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "accountId": "srcl:accountId",
+    "locationId": "srcl:locationId",
+    "serviceDate": "schema:startDate",
+    "wasteType": "srcl:wasteType",
+    "status": "srcl:serviceStatus",
+    "containerCount": "srcl:containerCount",
+    "weight": "schema:weight",
+    "manifestNumber": "srcl:manifestNumber",
+    "treatmentFacility": "srcl:treatmentFacility",
+    "complianceDocumentUrl": "schema:url",
+    "driverName": "srcl:serviceProvider",
+    "createdAt": "schema:dateCreated",
+    "employeeId": "srcl:employeeId",
+    "employeeName": "schema:name",
+    "courseId": "srcl:courseId",
+    "courseName": "schema:name",
+    "courseType": "srcl:courseType",
+    "completionDate": "schema:endDate",
+    "expirationDate": "srcl:expirationDate",
+    "score": "schema:value",
+    "certificateUrl": "schema:url"
+  }
+}

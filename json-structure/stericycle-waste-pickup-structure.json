@@ -1,0 +1,82 @@
+{
+  "title": "Stericycle Waste Pickup Structure",
+  "description": "Field structure documentation for regulated medical waste pickup records",
+  "type": "object",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Unique pickup record identifier"
+    },
+    {
+      "name": "accountId",
+      "type": "string",
+      "required": true,
+      "description": "Customer account identifier"
+    },
+    {
+      "name": "locationId",
+      "type": "string",
+      "required": false,
+      "description": "Service location within the account"
+    },
+    {
+      "name": "serviceDate",
+      "type": "date",
+      "required": true,
+      "description": "Scheduled pickup date (YYYY-MM-DD)"
+    },
+    {
+      "name": "wasteType",
+      "type": "enum",
+      "values": [
+        "regulated-medical-waste",
+        "sharps",
+        "pharmaceutical-waste",
+        "hazardous-waste",
+        "chemotherapy-waste",
+        "pathological-waste"
+      ],
+      "required": true,
+      "description": "Regulatory category of waste collected"
+    },
+    {
+      "name": "status",
+      "type": "enum",
+      "values": ["scheduled", "completed", "cancelled", "missed"],
+      "required": true,
+      "description": "Service status"
+    },
+    {
+      "name": "containerCount",
+      "type": "integer",
+      "required": false,
+      "description": "Number of containers collected"
+    },
+    {
+      "name": "weight",
+      "type": "number",
+      "required": false,
+      "description": "Total weight in pounds"
+    },
+    {
+      "name": "manifestNumber",
+      "type": "string",
+      "required": false,
+      "description": "Regulatory waste tracking manifest number"
+    },
+    {
+      "name": "treatmentFacility",
+      "type": "string",
+      "required": false,
+      "description": "Name of disposal facility"
+    },
+    {
+      "name": "complianceDocumentUrl",
+      "type": "uri",
+      "required": false,
+      "description": "Link to compliance certificate"
+    }
+  ]
+}
