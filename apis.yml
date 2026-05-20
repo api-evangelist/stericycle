@@ -46,6 +46,8 @@ apis:
       - type: Portal
         url: https://www.mystericycle.com
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/stericycle
   - type: Website
     url: https://www.stericycle.com/en-us
   - type: Documentation
