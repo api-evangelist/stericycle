@@ -46,6 +46,8 @@ apis:
       - type: Portal
         url: https://www.mystericycle.com
 common:
+  - type: DomainSecurity
+    url: security/stericycle-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/stericycle
   - type: Website
