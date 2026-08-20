@@ -102,6 +102,10 @@ services:
       and compliant disposal of controlled substances and hazardous drugs.
     url: https://www.stericycle.com/en-us/solutions/regulated-waste-disposal/pharmaceutical-waste
     tags:
+      - Pharmaceuticals
+      - Compliance
+      - Healthcare
+    tags_raw:
       - Pharmaceutical
       - Compliance
       - Healthcare
