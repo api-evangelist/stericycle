@@ -1,7 +1,9 @@
 ---
 title: Carenet Health Acquires Stericycle Communication Solutions
 url: https://ai-techpark.com/carenet-health-acquires-stericycle-communication-solutions/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Stericycle" press release artificial intelligence'
 position: 5
 source: serpapi-google

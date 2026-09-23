@@ -1,7 +1,9 @@
 ---
 title: WM Completes Acquisition of Stericycle
 url: https://investors.wm.com/news-releases/news-release-details/wm-completes-acquisition-stericycle
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Stericycle" press release artificial intelligence'
 position: 1
 source: serpapi-google

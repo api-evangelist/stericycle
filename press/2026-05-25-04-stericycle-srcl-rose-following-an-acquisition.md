@@ -1,7 +1,9 @@
 ---
 title: Stericycle (SRCL) Rose Following an Acquisition ...
 url: https://finance.yahoo.com/news/stericycle-srcl-rose-following-acquisition-074933097.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Stericycle" press release artificial intelligence'
 position: 4
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: WM Completes Acquisition of Stericycle
 url: https://www.sec.gov/Archives/edgar/data/823768/000110465924113690/tm2427004d3_ex99-1.htm
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Stericycle" press release artificial intelligence'
 position: 2
 source: serpapi-google
