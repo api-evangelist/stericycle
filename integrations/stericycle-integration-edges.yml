@@ -1,0 +1,59 @@
+edges:
+- partner_name: US EPA (RCRA hazardous-waste handler registration)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://enviro.epa.gov/envirofacts/rcrainfo/facility-search?handlerId=CAL000331625
+  category: Hazardous-waste handler
+  contract_reference:
+    register: US EPA RCRAInfo handler register (e-Manifest site registry; rcrapublic export HD_REPORTING)
+    spec_file: null
+    standard: RCRA Subtitle C (EPA Form 8700-12 Site ID notification)
+    role: rcra-waste-handler
+    registered_name: STERICYCLE
+    owner_name: STERICYCLE INC
+    operator_name: INGRID NEWTON
+    register_id: EPA ID CAL000331625
+    activities:
+    - manifest-broker
+    - transporter
+    location: RANCHO CORDOVA, CA
+    matched_domain: stericycle.com
+    matched_by: domain
+    identity_source: handler's own contact e-mail domain on its RCRA Site ID notification (no lookup)
+    signal_note: 'participation only: a Site ID notification is not a certification; activities are context; site
+      counts never recorded (breadth is not credit); generators are end users and not read'
+    detected_by: sweep-carbon-environment.py
+    detected: '2026-10-19'
+    other_registrations:
+    - STERICYCLE, INC. (EPA ID ALR000034280)
+    - STERICYCLE AT BRADLEY COUNTY (EPA ID ARR000031112)
+    - STERICYCLE AT DREW COUNTY (EPA ID ARR000031120)
+    - STERICYCLE AT LINCOLN COUNTY (EPA ID ARR000031138)
+    - STERICYCLE INC FRESNO (EPA ID CAD980891360)
+    - STERICYCLE INC (EPA ID CAL000347143)
+    - STERICYCLE, INC (EPA ID CAL000439319)
+    - STERICYCLE SPECIALTY WASTE SOLUTIONS INC (EPA ID GAR000045781)
+    - STERICYCLE SPECIALTY WASTE SOLUTIONS INCORPORATED (EPA ID INR000120550)
+    - SANFORD MOTORS INC (EPA ID PAR000013797)
+  detected_by: sweep-carbon-environment.py
+  first_seen: '2026-10-19'
+generated: '2026-10-19'
+method: searched
+source:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+checked:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
